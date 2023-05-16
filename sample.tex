@@ -121,43 +121,6 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
 %------------------------------------------------
 
 %------------------------------------------------
-%justification of original work
-%------------------------------------------------
-
-\begin{frame}{Amazon New Data Generation}
-    \begin{itemize}
-        \item Scrapped amazon.in website using selenium.
-        \item We have extracted product listing and product information for ten categories. \break 
-            - After extraction, we are manually tagging the product listing. \break
-    \end{itemize}
-    
-          \begin{table}[h!]
-  \begin{center}
-    \caption{A summary of total data scrapped using Beautifulsoup from IMDB Website.}
-    \label{tab:table1}
-    \begin{tabular}{|l|c|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
-      \hline
-      \textbf{Dataset } & \textbf{Scrapped Listings} \\
-      
-      \hline
-      Amazon & 3154  \\
-      \hline
-     
-    \end{tabular}
-  \end{center}
-\end{table}
-\begin{itemize}
-      
-    \item \alert{Repository:}\href{ https://github.com/sanjay-kv/Semi-supervised-sequence-learning-Project/tree/main/amazon_scrapping}{ https://github.com/sanjay-kv/Semi-supervised-sequence-learning-Project/tree/main/amazon-scrapping}
- 
-    \end{itemize}
-\end{frame}
-
-
-%----------------------------------------------------------------------------------------
-
-
-%------------------------------------------------
 % Dataset for the sentiment classification task}
 %------------------------------------------------
 \begin{frame}{Dataset for the sentiment classification task}
@@ -180,49 +143,11 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
 \end{frame}
 %------------------------------------------------
 
-%------------------------------------------------
-% Dataset for the product classification task}
-%------------------------------------------------
-\begin{frame}{Dataset for the product classification task}
-    \tableofcontents
 
-    \textbf{Dataset}
-        \begin{enumerate}
-        \item Dataset: DBpedia dataset.\break 
-            - Training set: 560,000 labeled examples.\break
-            - Test set: 70,000 examples.\break
-         
-         \item Replication of 2\% the size of the original DBpedia dataset.\break 
-            - Training set: 11,200 labeled examples.\break 
-            - Test set: 1,400 examples.\break
-        
-        \item Replication of new Amazon dataset\break 
-            - Training set: 2,795 examples.\break 
-            - Test set: 395 examples.\break
-        \end{enumerate}
-\end{frame}
-%------------------------------------------------
 %-------------------------------------------------------------
 
 %------------------------------------------------
-% Sanjay Issues Explanation in details
-%------------------------------------------------
-\begin{frame}{Pre-training Process}
-    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-    \tableofcontents
-%------------------------------------------------
-%Hyperparameters tuning
-%------------------------------------------------
 
- %Adding picture
-
-  \begin{figure}
-   \includegraphics[width=420]{updated_model_1.jpg}
-      \caption{On left the Default parameter, On right Parameters we used for replication}
-\end{figure}
-
-\end{frame}
-%----
 
 %------------------------------------------------
 \begin{frame}{Evaluation Results}
