@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{footline}[text line]{%
-  \parbox{\linewidth}{\vspace*{-8pt}Email:  \href{sanjaykanakkot.viswanathan@gmail.com}{sanjaykanakkot.viswanathan@gmail.com,}    Company Website: \href{https://www.truuth.id}{https://www.truuth.id}\hfill\insertpagenumber}}
+  \parbox{\linewidth}{\vspace*{-8pt}Email:  \href{sanjaykanakkot.viswanathan@gmail.com}{sanjaykanakkot.viswanathan@truuth.id,}    Company Website: \href{https://www.truuth.id}{https://www.truuth.id}\hfill\insertpagenumber}}
    
 \setbeamertemplate{navigation symbols}{}
 
@@ -67,18 +67,17 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
     \textbf{Project: Text Format MRZ, Visual Feature Check POC.}
     \begin{enumerate}
         \item Project Objective/Goal.\break 
-            - Review MRZ Checksum Validation Falsification Scenarios.\break 
-            - Implement/Document the MRZ POC(Proof of Concept)  .\break
-            - Check the Validity of the API by running positive and negative testing. \break
+            - Review MRZ checksum Validation Falsification Scenarios.\break 
+            - Check the validity of the API by running positive and negative testing.\break
+            - Apply deep-learning image enhancement to decrease OCR error rates. \break
             
-     \textbf{Problem addressed by the project.}        
-         \item  Create a new document authenticity sub-check based on the visual features.\break 
-            - Analyze the match percentage and further investigate failed documents.\break 
-            - Perform ML Model, Generate Hypothesis and Conclusion.\break
+          
+         \item Description of the Problem addressed by the project.\break 
+            - Find the background of the datasets the organization has based on the geography and perform authenticity checks.\break 
+            - Analyze the match percentage and further investigate the failed documents which will give more ideas about the dataset and ideas to deal with similar docs.\break
             
-        \item Design, build and improve Visual Feature POC\break 
-            - Analyse the right-skewed data with less accuracy than predicted.\break 
-            - Apply deep-learning image enhancement and decrease OCR error rates.\break
+        \item Why is it important for the company?\break 
+            - Updating the document classifier which delivers greater than 99.9 percent accuracy across all known global ID documents and returns a response in less than 5 seconds.
         \end{enumerate}
 \end{frame}
 %------------------------------------------------
@@ -90,7 +89,7 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
 
 
 %------------------------------------------------
-\begin{frame}{Learning Curve \& Skills Developed}
+\begin{frame}{Methodology/Approach}
     % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
     \tableofcontents
 %------------------------------------------------
@@ -100,15 +99,15 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
     \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
         \column{.45\textwidth} % Left column and width
-        \textbf{Skills Learned/ Analysis}
+        \textbf{Overview}
         \begin{enumerate}
-            \item Problem-Solving.
-            \item Technical Documentation.
-            \item Data Wrangling/ ML.
+            \item SIFT Method for Document Match.
+            \item APCER/BPCER Methods.
+            \item Deep Learning brightness enhancement.
         \end{enumerate}
 
         \column{.5\textwidth} % Right column and width
-         Learning to use the Cloud platform like Amazon Sage Maker and Atlassian Confluence tool was productive in analyzing large datasets in fraction of the time.
+         For Text OCR used APCER/ BPCER method for overall error rate classification and for image template used SIFT method to calculate the number of matching features for each sample image vs the chosen template for the document class
 
     \end{columns}   \\
     
@@ -118,10 +117,10 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
     \label{tab:table1}
     \begin{tabular}{|l|c|r|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
       \hline
-      \textbf{Tools } & \textbf{Framework} & \textbf{Programming}\\
+      \textbf{Tools } & \textbf{Framework} & \textbf{Technologies}\\
       
       \hline
-      Amazon SageMaker, Confluence & Numpy, PIL  & Python \\
+      SageMaker, Confluence, VScode & Numpy, PIL, YOLO  & AWS, Amazon Textract  \\
       \hline
      
     \end{tabular}
@@ -134,30 +133,90 @@ Sanjay Kanakkot Viswanathan\inst{},\break Student ID: 46313966\inst{}}
     \end{itemize}
 \end{frame}
 %------------------------------------------------
+% Sanjay Issues Explanation in details
+
 %------------------------------------------------
-% Dataset for the sentiment classification task}
+% Sanjay Issues Explanation in details
 %------------------------------------------------
-\begin{frame}{Project/Objective }
+\begin{frame}{Project Implementation}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
     \tableofcontents
+%------------------------------------------------
+%Hyperparameters tuning
+%------------------------------------------------
+    \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-    \textbf{Project: Text Format MRZ, Visual Feature Check POC.}
-    \begin{enumerate}
-        \item Design, build and improve Text format check..\break 
-            - Review MRZ Checksum Validation Falsification Scenarios.\break 
-            - Implement/Document the MRZ POC(Proof of Concept)  .\break
-            - Check the Validity of the API by running positive and negative testing. \break
-            
-         \item  Create a new document authenticity sub-check based on the visual features.\break 
-            - Analyze the match percentage and further investigate failed documents.\break 
-            - Perform ML Model, Generate Hypothesis and Conclusion.\break
-            
-        \item Design, build and improve Visual Feature POC\break 
-            - Analyse the right-skewed data with less accuracy than predicted.\break 
-            - Apply deep-learning image enhancement and decrease OCR error rates.\break
+        \column{.45\textwidth} % Left column and width
+        \textbf{Key Steps and Milestone}
+        \begin{enumerate}
+            \item SIFT Method for Document Match.
+            \item APCER/BPCER Methods.
+        
         \end{enumerate}
+
+        \column{.5\textwidth} % Right column and width
+         For Text OCR used APCER/ BPCER method for overall error rate classification and for image template used SIFT method.
+
+    \end{columns}   \\
+ %Adding picture
+
+  \begin{figure}
+   \includegraphics[width=420]{tool.jpg}
+      \caption{Screenshot of Amazon Sagemaker tool.}
+\end{figure}
+
 \end{frame}
+%----
 
 %------------------------------------------------
+\begin{frame}{Project Implementation - Algorithm}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \tableofcontents
+%------------------------------------------------
+%Hyperparameters tuning
+%------------------------------------------------
+
+ %Adding picture
+
+  \begin{figure}
+   \includegraphics[width=340]{dia.jpg}
+      \caption{Supplement text strings with YOLO image classification model for all supported ID documents}
+\end{figure}
+
+\end{frame}
+%----
+
+% Sanjay Issues Explanation in details
+%------------------------------------------------
+\begin{frame}{Results and Achievements}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \tableofcontents
+%------------------------------------------------
+%Hyperparameters tuning
+%------------------------------------------------
+    \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+        \column{.45\textwidth} % Left column and width
+        \textbf{Key Steps and Milestone}
+        \begin{enumerate}
+            \item SIFT Method for Document Match.
+            \item APCER/BPCER Methods.
+        
+        \end{enumerate}
+
+        \column{.5\textwidth} % Right column and width
+         For Text OCR used APCER/ BPCER method for overall error rate classification and for image template used SIFT method.
+
+    \end{columns}   \\
+ %Adding picture
+
+  \begin{figure}
+   \includegraphics[width=420]{tool.jpg}
+      \caption{Screenshot of Amazon Sagemaker tool.}
+\end{figure}
+
+\end{frame}
+%----
 % Findings and conclusion for the project
 %------------------------------------------------
 \begin{frame}{Conclusion}
